@@ -1,0 +1,82 @@
+:root {
+    /* Theme 3 */
+
+    /* Backgrounds */
+
+    --very-dark-violet-main-background: hsl(268, 75%, 9%);
+    --very-dark-violet-toggle-background-keypad-background-screen-background: hsl(
+        268,
+        71%,
+        12%
+    );
+
+    /* Keys */
+
+    --dark-violet-key-background: hsl(281, 89%, 26%);
+    --vivid-magenta-key-shadow: hsl(285, 91%, 52%);
+
+    --pure-cyan-key-background-toggle: hsl(176, 100%, 44%);
+    --soft-cyan-key-shadow: hsl(177, 92%, 70%);
+
+    --very-dark-violet-key-background: hsl(268, 47%, 21%);
+    --dark-magenta-key-shadow: hsl(290, 70%, 36%);
+
+    /* Text */
+
+    --light-yellow: hsl(52, 100%, 62%);
+    --very-dark-blue: hsl(198, 20%, 13%);
+    --white-text: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--very-dark-violet-main-background);
+    color: var(--light-yellow);
+}
+
+button {
+    background-color: var(--very-dark-violet-key-background);
+    color: var(--light-yellow);
+    box-shadow: var(--dark-magenta-key-shadow) 0px -5px 3px 0px inset;
+}
+
+.calculator-text-container {
+    border-radius: 1rem;
+    background-color: var(
+        --very-dark-violet-toggle-background-keypad-background-screen-background
+    );
+}
+
+.calculator-num-pads-container {
+    border-radius: 1rem;
+    background-color: var(
+        --very-dark-violet-toggle-background-keypad-background-screen-background
+    );
+}
+
+.theme-slider {
+    accent-color: var(--pure-cyan-key-background-toggle);
+    background-color: var(
+        --very-dark-violet-toggle-background-keypad-background-screen-background
+    );
+}
+
+.theme-slider:hover {
+    accent-color: rgb(175, 250, 247);
+}
+
+.btn-delete,
+.btn-reset {
+    color: var(--white-text);
+}
+
+.btn-equal-sign {
+    background-color: var(--pure-cyan-key-background-toggle);
+    color: var(--very-dark-blue);
+    box-shadow: var(--soft-cyan-key-shadow) 0px -5px 3px 0px inset;
+}
+
+.btn-delete,
+.btn-reset {
+    background-color: var(--dark-violet-key-background);
+    box-shadow: var(--vivid-magenta-key-shadow) 0px -5px 3px 0px inset;
+}

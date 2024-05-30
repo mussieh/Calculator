@@ -1,0 +1,72 @@
+:root {
+    /* Theme 2 */
+
+    /* Backgrounds */
+
+    --light-gray-main-background: hsl(0, 0%, 90%);
+    --grayish-red-toggle-background-keypad-background: hsl(0, 5%, 81%);
+    --very-light-gray-screen-background: hsl(0, 0%, 93%);
+
+    /* Keys */
+
+    --dark-moderate-cyan-key-background: hsl(185, 42%, 37%);
+    --very-dark-cyan-key-shadow: hsl(185, 58%, 25%);
+
+    --orange-key-background-toggle: hsl(25, 98%, 40%);
+    --dark-orange-key-shadow: hsl(25, 99%, 27%);
+
+    --light-grayish-yellow-key-background: hsl(45, 7%, 89%);
+    --dark-grayish-orange-key-shadow: hsl(35, 11%, 61%);
+
+    /* Text */
+
+    --very-dark-grayish-yellow: hsl(60, 10%, 19%);
+    --white-text: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--light-gray-main-background);
+    color: var(--very-dark-grayish-yellow);
+}
+
+button {
+    background-color: var(--light-grayish-yellow-key-background);
+    color: var(--very-dark-grayish-yellow);
+    box-shadow: var(--dark-grayish-orange-key-shadow) 0px -5px 3px 0px inset;
+}
+
+.calculator-text-container {
+    border-radius: 1rem;
+    background-color: var(--very-light-gray-screen-background);
+}
+
+.calculator-num-pads-container {
+    border-radius: 1rem;
+    background-color: var(--grayish-red-toggle-background-keypad-background);
+}
+
+.theme-slider {
+    accent-color: var(--orange-key-background-toggle);
+    background-color: var(--grayish-red-toggle-background-keypad-background);
+}
+
+.theme-slider:hover {
+    accent-color: rgb(232, 116, 100);
+}
+
+.btn-delete,
+.btn-reset,
+.btn-equal-sign {
+    color: var(--white-text);
+}
+
+.btn-equal-sign {
+    background-color: var(--orange-key-background-toggle);
+    box-shadow: var(--dark-orange-key-shadow) 0px -5px 3px 0px inset;
+}
+
+.btn-delete,
+.btn-reset {
+    background-color: var(--dark-moderate-cyan-key-background);
+    box-shadow: var(--very-dark-cyan-key-shadow) 0px -5px 3px 0px inset;
+}

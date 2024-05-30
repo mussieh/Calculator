@@ -1,0 +1,80 @@
+:root {
+    /* Theme 1 */
+
+    /* Backgrounds */
+
+    --very-dark-desaturated-blue-main-background: hsl(222, 26%, 31%);
+    --very-dark-desaturated-blue-toggle-background-keypad-background: hsl(
+        223,
+        31%,
+        20%
+    );
+    --very-dark-desaturated-blue-screen-background: hsl(224, 36%, 15%);
+
+    /* Keys */
+
+    --desaturated-dark-blue-key-background: hsl(225, 21%, 49%);
+    --desaturated-dark-blue-key-shadow: hsl(224, 28%, 35%);
+
+    --red-key-background-toggle: hsl(6, 63%, 50%);
+    --dark-red-key-shadow: hsl(6, 70%, 34%);
+
+    --light-grayish-orange-key-background: hsl(30, 25%, 89%);
+    --grayish-orange-key-shadow: hsl(28, 16%, 65%);
+
+    /* Text */
+
+    --very-dark-grayish-blue: hsl(221, 14%, 31%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--very-dark-desaturated-blue-main-background);
+    color: var(--white);
+}
+
+button {
+    background-color: var(--light-grayish-orange-key-background);
+    color: var(--very-dark-grayish-blue);
+    box-shadow: var(--grayish-orange-key-shadow) 0px -5px 3px 0px inset;
+}
+
+.calculator-text-container {
+    border-radius: 1rem;
+    background-color: var(--very-dark-desaturated-blue-screen-background);
+}
+
+.calculator-num-pads-container {
+    border-radius: 1rem;
+    background-color: var(
+        --very-dark-desaturated-blue-toggle-background-keypad-background
+    );
+}
+
+.theme-slider {
+    accent-color: var(--red-key-background-toggle);
+    background-color: var(
+        --very-dark-desaturated-blue-toggle-background-keypad-background
+    );
+}
+
+.theme-slider:hover {
+    accent-color: rgb(232, 116, 100);
+}
+
+.btn-delete,
+.btn-reset,
+.btn-equal-sign {
+    color: var(--white);
+}
+
+.btn-equal-sign {
+    background-color: var(--red-key-background-toggle);
+    box-shadow: var(--dark-red-key-shadow) 0px -5px 3px 0px inset;
+}
+
+.btn-delete,
+.btn-reset {
+    background-color: var(--desaturated-dark-blue-key-background);
+    box-shadow: var(--desaturated-dark-blue-key-shadow) 0px -5px 3px 0px inset;
+}
