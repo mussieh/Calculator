@@ -32,8 +32,6 @@ const updateUI = (calculation) => {
     }
 };
 
-const changeTheme = () => {};
-
 const updateCalculation = (key, calculation) => {
     const operations = { "+": add, "-": subtract, x: multiply, "/": divide };
     const currentOperand = key;
